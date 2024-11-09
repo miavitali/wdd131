@@ -1,0 +1,52 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: 13rem auto 12rem / auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header {
+    display: grid;
+    grid-template: 9rem 4rem / auto;
+    background: rgb(50, 50, 50);
+    color: white;
+    grid-column: 1 / 4;
+  }
+  
+  header h2 {
+    padding: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  nav a {
+    margin: 18px auto;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  main {
+    background: lightgrey;
+    grid-column: 1 / 3;
+    padding: 1rem;
+  }
+  
+  .aside {
+    background: white;
+    grid-column: 3 / 4;
+    padding: 1rem;
+  }
+  
+  footer {
+    background: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    grid-column: 1 / 4;
+    padding: 1rem;
+  }
