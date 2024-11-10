@@ -1,0 +1,91 @@
+body{
+    display: grid;
+    max-width: max-content;
+    grid-template: 9rem auto 7rem / auto;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+header{
+    display: grid;
+    grid-template: auto auto auto;
+    background: rgb(107, 85, 114);
+    color: white;
+    grid-column: 1 / 4;
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+}
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: lightgrey;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: white;
+    border: black;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+
+  }
+
+  .imp {
+    text-align: center;
+    background-color: rgba(137, 43, 226, 0.322);
+  }
+  .card h2{
+    text-align: center;
+  }
+
+  figure {
+    float: left;
+  }
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+  }
+
+  .card img {
+    float: right;
+    margin-left: 1rem;
+    border: 1px solid grey;
+  }
+
+  .home {
+    margin-top: 6rem;
+    text-decoration: underline;
+  }
+
+  .resources {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resources li {
+    margin-bottom: 1rem;
+  }
+
+  
+  footer {
+    background: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    grid-column: 1 / 4;
+    padding: 0.2rem;
+    margin: 0%;
+  }
