@@ -53,13 +53,16 @@ main {
 
   figure {
     float: left;
+    margin-top: 0%;
   }
 
   figcaption {
     text-align: center;
     font-style: italic;
   }
-
+.paragraph{
+    text-align: justify;
+}
   .card img {
     float: right;
     margin-left: 1rem;
