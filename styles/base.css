@@ -22,7 +22,7 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1rem;
 }
-.navigation a{
+.hover{
     text-decoration: none;
     color: white;
 }
