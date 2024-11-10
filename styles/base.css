@@ -7,7 +7,6 @@ body{
 }
 header{
     display: grid;
-    grid-template: auto auto auto;
     background: rgb(107, 85, 114);
     color: white;
     grid-column: 1 / 4;
