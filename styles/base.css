@@ -19,11 +19,15 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1rem;
 }
-.hover{
+.navigation a{
     text-decoration: none;
     color: white;
 }
+a:hover{
+    background-color: rgb(76, 75, 110);
+}
 main {
+    max-width: max-content;
     display: grid;
     grid-template-columns: auto auto;
     background: lightgrey;
