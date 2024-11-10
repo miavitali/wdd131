@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 body{
-    display: grid;
-    max-width: max-content;
-    grid-template: 9rem auto 7rem / auto;
     font-family: "Open Sans", sans-serif;
     margin: 0;
 }
