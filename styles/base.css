@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
-
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 header{
@@ -30,6 +28,7 @@ main {
     grid-template-columns: auto auto;
     background: lightgrey;
     padding: 1rem;
+    
   }
   
   .card {
