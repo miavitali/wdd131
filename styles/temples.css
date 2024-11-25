@@ -44,10 +44,10 @@ main img {
     height: 300px;
     border-radius: 4px;
 }
-figure, p {
-    margin: 2px;
-}
 
+figcaption{
+    text-align: center;
+}
 .img-grid {
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
