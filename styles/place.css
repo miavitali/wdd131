@@ -19,9 +19,12 @@ header, footer {
     padding: 0.5rem;
     color: var(--flag-color2);
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font) !important;
+h1{
     color: var(--flag-color2);
+}
+h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font) !important;
+    color: var(--flag-color3);
 }
 picture img {
     width: 100%;
@@ -79,10 +82,12 @@ picture img {
         left: -1rem;
         width: 85%;
         text-align: start;
+        /* color: var(--flag-color2); */
     }
     .card-header h2 {
         margin: 0;
-        display: inline;;
+        display: inline;
+        color: var(--flag-color2);
     }
     .card-header img {
         display: none;
@@ -100,4 +105,5 @@ picture img {
         flex-wrap: wrap;
         font-size: 14px;
     }
+    
 }
