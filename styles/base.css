@@ -1,0 +1,118 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    background: rgb(107, 85, 114);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: rgb(76, 75, 110);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: lightgrey;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.imp {
+    text-align: center;
+    background-color: rgba(137, 43, 226, 0.322);
+}
+
+.card h2 {
+    text-align: center;
+}
+
+figure {
+    float: left;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+.card img {
+    float: right;
+    margin-left: 1rem;
+    border: 1px solid grey;
+}
+
+.home {
+    margin-top: 6rem;
+    text-decoration: underline;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources li {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .card img {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+}
