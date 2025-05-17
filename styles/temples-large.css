@@ -3,7 +3,7 @@
         display: flex;
         justify-content: space-around;
     }
-    nav {
+    nav, nav.show {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -13,9 +13,9 @@
         padding: 0 0.5rem;
         border-bottom: 0;
     }
-    nav.show {
+    /* nav.show {
         display: flex;
-    }
+    } */
     #menu {
         display: none;
     }
