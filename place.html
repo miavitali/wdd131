@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Maldives</title>
+    <meta name="description" content="A webpage for showcasing details and weather of a place I have visited as per W03 assignment">
+    <meta name="author" content="Mia Vitali">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Maldives</h1>
+    </header>
+    <main>
+        <div class="ps-relative">
+            <picture>
+                <source media="(min-width:600px )" srcset="images/maldivas-large_.webp">
+                <img src="images/maldivas-small_.webp" height="750" width="500" alt="zanzibar">
+            </picture>
+            <div class="card data-card">
+                <div class="card-header"><h2>Data</h2></div>
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="text-end">Area:</td>
+                                <td>298 sq km</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Population:</td>
+                                <td>521,021</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Capital:</td>
+                                <td>Malé</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Languages:</td>
+                                <td>Dhivehi - English</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Currency:</td>
+                                <td>Maldivian Rufiyaa</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Time Zone:</td>
+                                <td>UTC+5</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Calling Code:</td>
+                                <td>+960</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Internet TLD:</td>
+                                <td>.mv</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card weather-card">
+                <div class="card-header"> 
+                    <h2>Weather</h2>
+                    <img src="images/sun-icon.svg" height="64" width="64" alt="weather">
+                    <span class="weather-icon">
+                    </span>
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="text-end">Temperature:</td>
+                                <td>28 <sup>o</sup>C</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Conditions:</td>
+                                <td>Sunny</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Wind:</td>
+                                <td>3 Km/h</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Wind Chill:</td>
+                                <td id="windChill"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Mia Vitali | Maldives </p>
+        <p class="text-emphasis" id="lastModified"></p>
+    </footer>
+</body>
+</html>

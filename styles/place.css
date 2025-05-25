@@ -1,0 +1,109 @@
+:root {
+    --flag-color1: #168d2ce3;
+    --flag-color2: #fcfbf8;
+    --flag-color3: #000;
+    --flag-color4: #b40202;
+    --heading-font: "Open Sans", sans-serif;
+    --body-font: "Poppins", sans-serif;
+
+    margin: 0;
+}
+body {
+    font-family: var(--body-font);
+    max-width: 800px;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: var(--flag-color4);
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--flag-color2);
+}
+h1{
+    color: var(--flag-color2);
+}
+h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font) !important;
+    color: var(--flag-color3);
+}
+picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-bottom: 1rem solid var(--flag-color1);
+    margin-bottom: -8px !important;
+}
+.text-end {
+    text-align: end;
+}
+.card-header {
+    text-align: center;
+}
+.card-body {
+    justify-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* For large screen above 600px */
+
+@media screen and (min-width:600px){
+    
+    .ps-relative {
+        position: relative;
+    }
+    .data-card {
+        position: absolute !important;
+        top: 2rem;
+        left: 3rem;
+    }
+    .weather-card {
+        position: absolute !important;
+        bottom: 2rem;
+        right: 3rem;
+        font-size: 14px;
+    }
+    .card {
+        --card-border-radius: 10px;
+        background-color: rgba(245, 245, 245, 0.8);
+        padding: 5px 20px;
+        border: var(--card-border) ;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-header {
+        background-color: var(--flag-color1);
+        padding: 0.5rem;
+        margin-bottom: 0;
+        border-bottom: var(--card-border);
+        position: absolute;
+        left: -1rem;
+        width: 85%;
+        text-align: start;
+        /* color: var(--flag-color2); */
+    }
+    .card-header h2 {
+        margin: 0;
+        display: inline;
+        color: var(--flag-color2);
+    }
+    .card-header img {
+        display: none;
+    }
+    .weather-icon {
+        display: inline;
+    }
+    .weather-icon::after {
+        content: "🔆";
+        font-size: 22px;
+        margin-left: 1rem;
+    }
+    .card-body {
+        padding-top: 50px;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+    
+}
