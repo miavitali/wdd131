@@ -58,6 +58,7 @@ const temples = [
   {
     templeName: "Mexico City Mexico",
     location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
     area: 116642,
     imageUrl: "images/mexico-city-temple.jpg"
   },
