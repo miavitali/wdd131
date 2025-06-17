@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bairespel Rate Us</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Mia Vitali">
+    <meta name="author" content="Mia Vitali">
+    <!-- <link rel="stylesheet" href="styles/project-large.css" media="screen and (min-width: 769px)" /> -->
+    <link rel="stylesheet" href="styles/proyecto.css"/>
+    <script src="scripts/proyecto.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" loading="lazy">
+        </div>
+        <a id="menu" href="#"></a>
+        <nav id="navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="rate.html">Rate Us</a>
+        </nav>
+    </header>
+    <main>
+        <form action="review.html" method="get" id="reviewForm">
+            <label>Customer Service *</label>
+            <div class="overall">
+                <div>
+                    <input type="radio" id="fivestar-service" name="rating-service" value="5" required>
+                    <label for="fivestar-service">☆☆☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="fourstar-service" name="rating-service" value="4" required>
+                    <label for="fourstar-service">☆☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="threestar-service" name="rating-service" value="3" required>
+                    <label for="threestar-service">☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="twostar-service" name="rating-service" value="2" required>
+                    <label for="twostar-service">☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="onestar-service" name="rating-service" value="1" required>
+                    <label for="onestar-service">☆</label>
+                </div>
+            </div>
+            <br>
+            <label>Delivery Time *</label>
+            <div class="overall">
+                <div>
+                    <input type="radio" id="fivestar-delivery" name="rating-delivery" value="5" required>
+                    <label for="fivestar-delivery">☆☆☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="fourstar-delivery" name="rating-delivery" value="4" required>
+                    <label for="fourstar-delivery">☆☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="threestar-delivery" name="rating-delivery" value="3" required>
+                    <label for="threestar-delivery">☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="twostar-delivery" name="rating-delivery" value="2" required>
+                    <label for="twostar-delivery">☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="onestar-delivery" name="rating-delivery" value="1" required>
+                    <label for="onestar-delivery">☆</label>
+                </div>
+            </div>
+            <br>
+            <label>Paper Quality *</label>
+            <div class="overall">
+                <div>
+                    <input type="radio" id="fivestar-quality" name="rating-quality" value="5" required>
+                    <label for="fivestar-quality">☆☆☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="fourstar-quality" name="rating-quality" value="4" required>
+                    <label for="fourstar-quality">☆☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="threestar-quality" name="rating-quality" value="3" required>
+                    <label for="threestar-quality">☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="twostar-quality" name="rating-quality" value="2" required>
+                    <label for="twostar-quality">☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="onestar-quality" name="rating-quality" value="1" required>
+                    <label for="onestar-quality">☆</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="review">Written Review</label>
+                <p>(Optional)</p>
+                <textarea id="review" name="review" placeholder="Write review here..." rows="6"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="name">Your name:</label>
+                <p>(Optional)</p>
+                <input type="text" id="name" name="name" autocomplete="off" placeholder="Your name">
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit" id="submit" value="Post Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Mia Vitali | Buenos Aires, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

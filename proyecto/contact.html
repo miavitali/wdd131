@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bairespel Contact Us</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Mia Vitali">
+    <meta name="author" content="Mia Vitali">
+    <!-- <link rel="stylesheet" href="styles/project-large.css" media="screen and (min-width: 769px)" /> -->
+    <link rel="stylesheet" href="styles/proyecto.css"/>
+    <script src="scripts/proyecto.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" loading="lazy">
+        </div>
+        <a id="menu" href="#"></a>
+        <nav id="navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="rate.html">Rate Us</a>
+        </nav>
+    </header>
+
+  <main class="contact-section">
+    <h1>Contact</h1>
+    <p>Want to get in touch? Fill out the form or write to us directly.</p>
+
+    <form class="contact-form">
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send message</button>
+    </form>
+    <div class="contact-icons">
+    
+        <a href="https://wa.me/5491123456789" target="_blank">
+        <img src="images/whatsapp.svg" alt="WhatsApp">
+        WhatsApp
+        </a>
+        <a href="https://www.instagram.com/bairespel" target="_blank">
+        <img src="images/instagram.svg" alt="Instagram">
+        Instagram
+        </a>
+        <a href="mailto:bairespel@gmail.com">
+        <img src="images/mail.svg" alt="Email">
+        Email
+        </a>
+    </div>
+  </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span> | Mia Vitali | Buenos Aires, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

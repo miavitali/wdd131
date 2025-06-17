@@ -1,0 +1,299 @@
+/*Para todas las páginas*/
+:root{
+    --primary-color: #ffe4ec;
+    --secondary-color: rgba(127, 204, 255, 0.5);
+    --accent1-color: #241a5a;
+    --accent2-color: #000000;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 30px;
+    background-color: #ffe4ec;
+    border-bottom: 2px solid #b2f0c9;
+}
+
+.logo img {
+  height: 165px;
+  width: auto;
+}
+header nav {
+    margin-right: 2rem;
+    display: flex;
+    gap: 50px; 
+}
+header nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+    justify-content: space-between;
+}
+/* #menu::before {
+    content: "≡";
+    color: white;
+    font-size: 2rem;
+}
+#menu.show::before {
+	content: "X";
+    color: white;
+    font-size: 1.5rem;
+} */
+#menu {
+    display: none;
+}
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+body{
+    background-color: var(--secondary-color);
+}
+
+/*Solo para Home*/
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: #cceeff; /* mismo celeste de fondo */
+  flex-wrap: wrap; /* por si el espacio es chico, que se acomode */
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: left;
+  color: #0b2e59;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff99cc; /* rosa suave */
+  color: #0b2e59;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff77bb;
+}
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px;
+  padding: 40px 20px ;
+  background-color: #ffeef5; /* rosa clarito */
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  max-width: 120px;
+  color: #3c2c35;
+}
+
+.feature img {
+  background-color: #fddbe6;
+  border-radius: 50%;
+  padding: 20px;
+  width: 64px;
+  height: 64px;
+  box-sizing: content-box;
+}
+
+.feature p {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Contact */
+
+.contact-section {
+  max-width: 800px;
+  margin: 0 auto; 
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--accent1-color);
+  box-sizing: border-box;
+  
+}
+
+
+.contact-form {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 30px 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 5px;
+  margin-top: 5px;
+  margin-right: 2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #cc4c6c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #b93f5d;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #b00066; 
+}
+
+form p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ESTRELLAS */
+.overall {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.overall input[type="radio"] {
+    display: none;
+}
+
+.overall label {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s ease;
+}
+
+/* Estrella seleccionada */
+.overall input[type="radio"]:checked + label {
+    color: #ff80b0; /* celeste-rosado */
+}
+
+/* BOTÓN */
+.submit {
+    text-align: center;
+}
+
+#submit {
+    background-color: #ff8dc4;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #e667a1;
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header nav.show {
+        display: flex;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        z-index: 10;
+    }
+
+    #menu::before {
+        content: "≡";
+        font-size: 2rem;
+        color: var(--accent1-color);
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
